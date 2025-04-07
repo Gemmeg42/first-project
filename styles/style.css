@@ -307,3 +307,85 @@ body {
   height: 877px;
   z-index: 0; 
 }
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-top: 2px solid #444;
+  position: relative;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__logo h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer__name {
+  font-size: 14px;
+  color: #bbb;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.footer__nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__nav ul li {
+  margin: 10px 0;
+}
+
+.footer__nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer__nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer__social h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+}
+
+.social-list li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.social-list li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.social-list li a img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px; /* Space between logo and name */
+  filter: brightness(0) invert(1); /* Ensures white icons on dark background */
+}
