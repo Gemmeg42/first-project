@@ -1,0 +1,279 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  min-width: 1500px;
+  position: relative;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;}
+  /* выше установили ограничения для секции 
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+/* Left part */
+.left-side {
+  width: 50%;
+  position: relative;
+}
+
+.word__top-left {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.word__center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.word__bottom-left {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Right part */
+.right-side {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 765px;
+  height: 608px;
+}
+
+.blue-rectangle {
+  position: absolute;
+  width: 568px;
+  height: 568px;
+  background-color: blue;
+  top: 20px; /* Keeps it slightly offset */
+  left: 20px; /* Adds alignment with image dimensions */
+  z-index: 1;
+}
+
+.main-image {
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+
+.text_link {
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+
+/* Right part */
+.right-side {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.image-wrapper {
+  position: relative;
+  width: 765px;
+  height: 608px;
+  margin-top: 0;
+  margin-right: 64px;
+  margin-left: auto;
+}
+
+.blue-rectangle {
+  position: absolute;
+  width: 568px;
+  height: 568px;
+  background-color: blue;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.main-image {
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.description {
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.description__header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.description__header h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description__text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.description__conclusion {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #444;
+}
+
+.digits {
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.digits__subheader {
+  margin-bottom: 60px; 
+}
+
+.digits-header{
+  margin-top: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.digits-flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin-bottom: 60px;
+  margin: 0 auto;
+}
+
+.digit-cell {
+  width: 200px; 
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.digit-cell span {
+  font-size: 14px;
+  color: #555;
+}
+
+.feynman {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  position: relative;
+}
+
+.feynman__text {
+  width: 50%;
+  text-align: left;
+}
+
+.feynman__text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feynman__text p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.feynman__link {
+  font-size: 16px;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.feynman__image-wrapper {
+  width: 50%;
+  position: relative;
+}
+
+.feynman__image {
+  position: absolute;
+  width: 867px;
+  height: 637px;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
