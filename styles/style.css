@@ -61,22 +61,23 @@ body {
 .word__top-left {
   position: absolute;
   top: 30px;
-  left: 10px;
+  left: 64px;
   font-size: 24px;
   font-weight: bold;
 }
 
 .word__center {
   position: absolute;
-  top: 50%;
+  top: 30%;
+  left: 64px;
   font-size: 102px;
   font-weight: bold;
 }
 
 .word__bottom-left {
   position: absolute;
-  bottom: 30px;
-  left: 10px;
+  bottom: 110px;
+  left: 64px;
   font-size: 18px;
 }
 
@@ -119,31 +120,31 @@ body {
 .description {
   padding: 20px;
   border-radius: 8px;
-  margin: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: flex-start; 
 }
 
-.description__header {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.description__header h2 {
-  font-size: 24px;
+.description__header{
+  font-size: 18px;
   font-weight: bold;
+  text-align: left; 
+  font-weight: normal;
+  line-height:1.2;
+  margin-right: 20px; 
+  color: lightblue; 
+}
+
+.description__content {
+  min-width: 784px;
+  width: 80%; 
 }
 
 .description__text {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #333;
-}
-
-.description__conclusion {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.6;
-  margin-top: 10px;
-  color: #444;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
 }
 
 .digits {
@@ -156,13 +157,18 @@ body {
 
 .digits__subheader {
   margin-bottom: 60px; 
+  line-height: 34px;
+  font-weight: normal;
+  font-size: 24px;
 }
 
 .digits-header{
   margin-top: 100px;
-  font-size: 24px;
+  font-size: 60px;
   font-weight: bold;
   margin-bottom: 20px;
+  line-height:1.15;
+  font-weight: 600;
 }
 
 .digits-flex-container {
@@ -178,11 +184,15 @@ body {
   border-radius: 20px;
   padding: 10px;
   text-align: center;
-  font-size: 16px;
+  font-size: 24px;
+  line-height:1.15;
+  font-weight: 600;
 }
 
 .digit-cell span {
-  font-size: 14px;
+  font-size: 18px;
+  line-height:1.2;
+  font-weight: normal;
   color: #555;
 }
 
@@ -195,29 +205,41 @@ body {
 
 .feynman__text {
   z-index: 1;
-  position: relative;
   text-align: center;
 }
 
 .feynman__text h2 {
+  position: absolute;
   font-size: 120px;
   font-weight: bold;
-  margin-top: 70px;
+  margin-top: 100px;
   width: 648px;
-  margin-left: 50%;
+  left: 35%;
+  font-weight: 600;
+  line-height:1.15;
+  z-index: 1;
 }
 
 .feynman__text p {
+  position: absolute;
   font-size: 36px;
-  margin-left: 50%;
+  left: 45%;
   top: 50%;
+  font-weight: normal;
+  z-index: 1;
 }
 
 .feynman__link {
   position: absolute;
   right:0;
+  top:54%;
   color: #0000EE;
   text-decoration: underline;
+  font-size: 36px;
+  line-height:51px;
+  font-weight: normal;
+  z-index: 1;
+
 }
 
 .feynman__image-wrapper {
@@ -227,6 +249,7 @@ body {
   width: 100%; 
   height: 100%; 
   overflow: hidden;
+  z-index: 0;
 }
 
 .feynman__image {
@@ -255,6 +278,7 @@ body {
   color: white;
   z-index: 1;
   position: relative;
+  line-height:normal;
 }
 
 .kaufman-header{
@@ -265,12 +289,11 @@ body {
   color: white;
   z-index: 1;
   position: relative;
+  line-height: 1.15;
 }
 
 .kaufman-flex-container {
   display: flex;
-  justify-content: space-around;
-  align-items: stretch;
   margin-bottom: 60px;
   margin: 0 auto;
   position: relative;
@@ -282,14 +305,16 @@ body {
   height: 200px; 
   border-radius: 20px;
   padding: 10px;
-  text-align: center;
-  font-size: 16px;
+  font-size: 24px;
   color: white;
+  line-height:1.15;
 }
 
 .kaufman-cell span {
-  font-size: 14px;
+  font-size: 18px;
   color: white;
+  line-height:1.2;
+  font-weight: normal;
 }
 
 .kaufman__image-wrapper {
@@ -340,6 +365,11 @@ body {
   left: 10px;
 }
 
+.footer__list-header{
+  font-size: 60px;
+  font-weight: 600;
+}
+
 .footer__nav ul {
   list-style: none;
   padding: 0;
@@ -380,12 +410,11 @@ body {
   align-items: center;
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .social-list li a img {
   width: 16px;
   height: 16px;
-  margin-right: 10px; /* Space between logo and name */
-  filter: brightness(0) invert(1); /* Ensures white icons on dark background */
+  margin-right: 10px; 
 }
